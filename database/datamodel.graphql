@@ -1,0 +1,10 @@
+"""
+Explanation: `datamodel.graphql` contains the definition of the types from your data model. The generated Prisma GraphQL API will then expose CRUD and realtime operations for these types.
+"""
+
+type Post {
+  id: ID! @unique # Prisma auto-generates globally unique IDs for your database records
+  title: String!
+  content: String!
+  published: Boolean @default(value: "false")
+}

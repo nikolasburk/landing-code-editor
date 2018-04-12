@@ -1,0 +1,10 @@
+
+# Explanation: `prisma.yml` is the main configuration file for your Prisma API. At the bare minimum, it defines the `secret` that's required to authenticate when accessing the Prisma GraphQL API, the `datamodel` as well as the `endpoint` of the service. 
+
+secret: mysecret123
+# endpoint: http://prisma-eu1.sh/myservice
+datamodel: datamodel.graphql
+service: asdasdasdasd
+stage: dev
+cluster: local
+schema: prisma.graphql

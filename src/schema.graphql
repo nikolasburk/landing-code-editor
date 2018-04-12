@@ -1,0 +1,15 @@
+"""
+Explanation: `schema.graphql` defines the API of your GraphQL server, it is also called **application schema**. Often, this is (but doesn't have to be) a subset/variation of the GraphQL schema of the Prisma GraphQL API in `src/generated/prisma.graphql`.
+"""
+
+# import Post from "./generated/prisma.graphql"
+
+type Query {
+  feed: [Post!]!
+  post(id: ID!): Post
+}
+
+type Mutation {
+  createDraft(title: String!, text: String): Post
+  publish(id: ID!): Post
+}
